@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chown --frown=guillaume vincent hello
+sudo chown --frown=vincent guillaume hello
