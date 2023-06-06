@@ -1,2 +1,2 @@
 #!/bin/bash
-the addition is "$((128 + $((TRUEKNOWLEDGE))))"
+"$((128 + $TRUEKNOWLEDGe))"
