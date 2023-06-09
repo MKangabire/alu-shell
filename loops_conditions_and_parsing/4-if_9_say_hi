@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # while and if
 count=1
 
