@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-#..
-while IFS=':' read -r username _ userid groupid _ home shell; do
-    passcode=$(grep -w "$username" /etc/shadow | cut -d ':' -f 2)
-    user_info=$(finger "$username" | awk -F: '{ print $3 }')
+#.h
 
-    echo "The user $username is part of the $groupid gang, lives in $home, and rides $shell."
-    echo "User ID's place is protected by the passcode $passcode, more info about the user here: $user_info"
+while IFS=':' read -r username password userid groupid userdesc homedir shell
+do
+    echo "The user $username is part of the $groupid gang, lives in $homedir, and rides $shell."
+    echo "User ID's place is protected by the passcode $password, more info about the user here: $userdesc"
+    echo
 done < /etc/passwd
 
