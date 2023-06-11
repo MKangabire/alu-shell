@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #..
 # shellcheck disable=SC2009
-pstree -p | grep bash | awk '{print $1}'
+ps -ef | grep bash | awk '{print $2, $3, $8}'
