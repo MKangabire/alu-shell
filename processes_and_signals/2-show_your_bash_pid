@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#..
+# shellcheck disable=SC2009
+pstree -p | grep bash | awk '{print $1}'
