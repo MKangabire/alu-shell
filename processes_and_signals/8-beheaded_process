@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#termintes 7-highlander
+terminate()
+{
+	echo " killed"
+	exit
+}
+trap 'terminate' SIGTERM
