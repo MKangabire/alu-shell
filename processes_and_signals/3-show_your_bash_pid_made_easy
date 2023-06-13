@@ -2,5 +2,5 @@
 # Search for processes containing the word "bash"
 pids=$(pgrep bash)
 for pid in $pids; do
-    echo "$pid $(ps -p $pid -o comm=)"
+    echo "$pid $(ps -p "$pid" -o comm=)"
 done
