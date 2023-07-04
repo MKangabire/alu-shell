@@ -10,3 +10,4 @@ do
 
 	((START++))
 done
+cat story.txt
